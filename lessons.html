@@ -20,13 +20,27 @@
     <body>
         <div id="container">
             <div id="header">
+                <!-- Mobile Nav -->
+                <nav class="mobile-nav">
+                    <div id="menu-links">
+                        <a href="index.html">Home</a>
+                        <a href="lessons.html">Lessons</a>
+                        <a href="instructors.html">Instructors</a>
+                        <a href="rentals.html">Rentals</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                    <a class="menu-icon" onclick="hamburger()">
+                        <div>&#9776;</div>
+                    </a>
+                </nav>
+
                 <header>
                     <h1><span class="tab-desk">&#9836;</span> &nbsp; Strike a Chord &nbsp; <span class="tab-desk">&#9836;</span></h1>
                 </header>
             </div>
 
             <div id="nav">
-                <nav>
+                <nav class="tab-desk">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="lessons.html">Lessons</a></li>
@@ -59,16 +73,64 @@
                     <div id="piano">
                         <h3>Piano Lessons</h3>
                         <img src="images/piano-lesson.jpg" alt="An instructor teaching a student to play piano" class="round">
+                        <p>
+                            We offer piano lessons for all ages, beginning at age three. Whether you are a beginner
+                            or have been playing the piano for a while, we have a program to suit your needs. Learn
+                            new techniques, theory, harmony, and tone. Learning how to play the piano helps develop
+                            hand-eye coordination and self-confidence.
+                        </p>
+
+                        <h4>
+                            Piano Spring Performance.
+                        </h4>
+
+                        <audio controls>
+                            <source src="music/piano.mp3" type="audio/mp3">
+                            <source src="music/piano.ogg" type="audio/ogg">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </div>
 
                     <div id="guitar">
                         <h3>Guitar Lessons</h3>
                         <img src="images/child-guitar.jpg" alt="A child holding a guitar" class="round">
+                        <p>
+                            We teach acoustic guitar, electric guitar, bass guitar, and ukulele. We have guitar
+                            lessons for beginners, intermediate players, and advanced players. Improve your skills
+                            with weekly lessons. Learn new tips and techniques from experienced instructors. we
+                            also have a rock band program that you can join!
+                        </p>
+
+                        <h4>
+                            Guitar Winter Performance
+                        </h4>
+
+                        <audio controls>
+                            <source src="music/guitar.mp3" type="audio/mp3">
+                            <source src="music/guitar.ogg" type="audio/ogg">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </div>
 
                     <div id="violin">
                         <h3>Violin Lessons</h3>
                         <img src="images/woman-violin.jpg" alt="A woman playing the violin" class="round">
+                        <p>
+                            We offer violin lessons for all ages, beginning at age six. Our violin lessons include
+                            a variety of music styles, from fiddle to classical. Our instructors will help you fine
+                            tune techniques and accomplish your musical goals. We work with you to create a 
+                            customized program, tailored to your needs.
+                        </p>
+
+                        <h4>
+                            Violin Spring Performance
+                        </h4>
+
+                        <audio controls>
+                            <source src="music/violin.mp3" type="audio/mp3">
+                            <source src="music/violin.ogg" type="audio/ogg">
+                            Your browser does not support the audio tag.
+                        </audio>
                     </div>
                 </main>
             </div>
@@ -80,5 +142,6 @@
                 </footer>
             </div>
         </div>
+        <script src="scripts/script.js"></script>
     </body>
 </html>
